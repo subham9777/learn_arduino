@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 <TextView
-    android:id="@+id/text_view"
+    android:id="@+id/customtext_view"
     android:text="This is a tab layout"
     android:layout_gravity="center_vertical"
     android:layout_marginTop="10dp"

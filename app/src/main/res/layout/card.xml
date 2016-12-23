@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="16dp"
+    android:elevation="100dp"
+    card_view:cardBackgroundColor="#b2dfe4"
+    card_view:cardElevation="5dp"
+    card_view:cardCornerRadius="6dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/lessonno"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/lessonno"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
