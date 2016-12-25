@@ -28,7 +28,122 @@
             android:layout_gravity="center"
             android:id="@+id/toolbar_title"
             android:fontFamily="serif" />
-
-
     </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please let us know about any mistakes in the content. Thank you for your contribution"
+        android:textStyle="bold"
+        android:textSize="16.4dp"
+        android:layout_gravity="center"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="16.4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:padding="7dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editText"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:elevation="2dp"
+        android:background="@color/cardview_light_background" />
+
+    <TextView
+        android:text="Chapter/Test no. mistake found"
+        android:textStyle="bold"
+        android:textSize="16.4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:padding="7dp"
+        android:ems="10"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editText2"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:background="@color/cardview_light_background"
+        android:elevation="2dp"/>
+
+    <TextView
+        android:text="Description"
+        android:textStyle="bold"
+        android:textSize="16.4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:inputType="textMultiLine"
+        android:padding="7dp"
+        android:ems="10"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editText3"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2"
+        android:background="@color/cardview_light_background"
+        android:elevation="2dp"
+        android:layout_gravity="start"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:text="SUBMIT"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:id="@+id/button"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_alignEnd="@+id/editText3" />
+
 </RelativeLayout>
+
+

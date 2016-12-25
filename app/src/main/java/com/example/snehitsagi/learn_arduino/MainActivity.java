@@ -90,9 +90,8 @@ public class MainActivity extends AppCompatActivity {
                 case 0:
                     return new BlankFragment();
                 case 1:
-                    return new BlankFragment();
+                    return new BlankFragment2();
             }
-
             return null;
         }
 
