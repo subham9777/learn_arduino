@@ -30,7 +30,10 @@ public class BlankFragment2 extends Fragment {
 
         RecyclerView rv2 = (RecyclerView) rootView.findViewById(R.id.recyclerView2);
         rv2.setHasFixedSize(true);
-        MyAdapter adapter2 = new MyAdapter(new String[]{"01", "02", "03", "04", "05" , "06" , "07"}, new String[]{"Test1","Test2","Test3","Test4","Test5","Test6","Test7"});
+        /**
+         * Changed by anurag, added another parameter
+         */
+        MyAdapter adapter2 = new MyAdapter(new String[]{"01", "02", "03", "04", "05" , "06" , "07"}, new String[]{"Test1","Test2","Test3","Test4","Test5","Test6","Test7"}, rootView.getContext());
         rv2.setAdapter(adapter2);
 
         LinearLayoutManager llm2 = new LinearLayoutManager(getActivity());
