@@ -5,6 +5,7 @@
     android:id="@+id/activity_about"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDarker"
     tools:context="com.example.snehitsagi.learn_arduino.aboutActivity">
 
     <android.support.v7.widget.Toolbar
@@ -30,5 +31,41 @@
         android:fontFamily="serif" />
 
     </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:text="Aakash Research Labs is an aspiring team from SRM University which deals with application and web development for aakash tablets and it's operating environment. Ever since this team has started functioning, multiple innovative projects of vast diversity were attempted and successfully completed. With every app we make, we have one prime focus that every user must be benefited by it and find it helpful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="25dp"
+        android:textSize="18.8sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:text="______________________________"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="APP TEAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

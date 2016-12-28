@@ -5,6 +5,7 @@
     android:id="@+id/activity_more"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDarker"
     tools:context="com.example.snehitsagi.learn_arduino.reportActivity">
 
     <android.support.v7.widget.Toolbar
@@ -41,6 +42,7 @@
         android:text="Please let us know about any mistakes in the content. Thank you for your contribution"
         android:textStyle="bold"
         android:textSize="16.4dp"
+        android:textColor="@android:color/white"
         android:layout_gravity="center"
         android:id="@+id/textView" />
 
@@ -48,6 +50,7 @@
         android:text="Name"
         android:textStyle="bold"
         android:textSize="16.4dp"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
@@ -69,13 +72,14 @@
         android:id="@+id/editText"
         android:layout_alignRight="@+id/textView"
         android:layout_alignEnd="@+id/textView"
-        android:elevation="2dp"
+        android:elevation="3dp"
         android:background="@color/cardview_light_background" />
 
     <TextView
         android:text="Chapter/Test no. mistake found"
         android:textStyle="bold"
         android:textSize="16.4dp"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText"
@@ -98,12 +102,13 @@
         android:layout_alignRight="@+id/editText"
         android:layout_alignEnd="@+id/editText"
         android:background="@color/cardview_light_background"
-        android:elevation="2dp"/>
+        android:elevation="3dp"/>
 
     <TextView
         android:text="Description"
         android:textStyle="bold"
         android:textSize="16.4dp"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText2"
@@ -126,7 +131,7 @@
         android:layout_alignRight="@+id/editText2"
         android:layout_alignEnd="@+id/editText2"
         android:background="@color/cardview_light_background"
-        android:elevation="2dp"
+        android:elevation="3dp"
         android:layout_gravity="start"
         android:textAlignment="textStart" />
 
@@ -135,7 +140,7 @@
         android:layout_width="140dp"
         android:layout_height="50dp"
         android:id="@+id/button"
-        android:background="@color/colorPrimary"
+        android:background="@color/indicate"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:textSize="20dp"

@@ -2,6 +2,8 @@ package com.example.snehitsagi.learn_arduino;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -10,6 +12,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -105,6 +108,10 @@ public class MainActivity extends AppCompatActivity {
             View tab = LayoutInflater.from(MainActivity.this).inflate(R.layout.custom_view, null);
             TextView tv = (TextView) tab.findViewById(R.id.customtext_view);
             tv.setText(tabTitles[position]);
+            tv.setTextColor(Color.WHITE);
+            tv.setGravity(Gravity.CENTER);
+            tv.setTypeface(null, Typeface.BOLD);
+            tv.setTextSize(15);
             return tab;
         }
     }
