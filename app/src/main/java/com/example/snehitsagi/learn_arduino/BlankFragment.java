@@ -33,7 +33,7 @@ public class BlankFragment extends Fragment {
 /**
  * Changed by anurag, added another parameter
  */
-        MyAdapter adapter = new MyAdapter(new String[]{"01", "02", "03", "04", "05" , "06" , "07"}, new String[]{"Lesson1","Lesson2","Lesson3","Lesson4","Lesson5","Lesson6","Lesson7"}, rootView.getContext());
+        MyAdapter adapter = new MyAdapter(new String[]{"01", "02", "03", "04", "05" , "06" , "07"}, new String[]{"Lesson1","Lesson2","Lesson3","Lesson4","Lesson5","Lesson6","Lesson7"},new String[]{"01", "02", "03", "04", "05" , "06" , "07"}, rootView.getContext());
         rv.setAdapter(adapter);
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());

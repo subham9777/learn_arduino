@@ -2,6 +2,7 @@ package com.example.snehitsagi.learn_arduino;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 /**
@@ -9,15 +10,34 @@ import android.widget.TextView;
  */
 
 public class LessonActivity extends AppCompatActivity {
-    TextView textView;
+    TextView textViewLesson1;
+    TextView textViewLesson2;
+    TextView textViewLesson3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson);
 
-        textView = (TextView) findViewById(R.id.textView);
-        textView.setText(getIntent().getStringExtra("Lesson"));
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
+
+        textViewLesson1 = (TextView) findViewById(R.id.textViewLesson1);
+        textViewLesson1.setText(getIntent().getStringExtra("Lesson"));
+
+        textViewLesson2 = (TextView) findViewById(R.id.textViewLesson2);
+        textViewLesson2.setText(getIntent().getStringExtra("LessonNo"));
+
+        textViewLesson3 = (TextView) findViewById(R.id.textViewLesson3);
+        textViewLesson3.setText(getIntent().getStringExtra("LessonContent"));
+
+
         //
     }
 }
