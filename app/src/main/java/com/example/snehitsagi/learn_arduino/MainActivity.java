@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         TextView Title = (TextView) toolbar.findViewById(R.id.toolbar_title);
+        Typeface Rampung = Typeface.createFromAsset(getAssets(),"fonts/Rampung.ttf");
+        Title.setTextSize(32);
+        Title.setTypeface(Rampung);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
@@ -107,6 +110,8 @@ public class MainActivity extends AppCompatActivity {
         public View getTabView(int position) {
             View tab = LayoutInflater.from(MainActivity.this).inflate(R.layout.custom_view, null);
             TextView tv = (TextView) tab.findViewById(R.id.customtext_view);
+            Typeface Alice = Typeface.createFromAsset(getAssets(),"fonts/Alice-Regular.ttf");
+            tv.setTypeface(Alice);
             tv.setText(tabTitles[position]);
             tv.setTextColor(Color.WHITE);
             tv.setGravity(Gravity.CENTER);

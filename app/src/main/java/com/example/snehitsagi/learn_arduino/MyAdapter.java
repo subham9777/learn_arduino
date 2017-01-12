@@ -55,13 +55,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
         holder.mTextView.setText(mDataset[position]);
         holder.mTextView2.setText(mDataset2[position]);
-        holder.mTextView3.setText(mDataset3[position]);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, LessonActivity.class);
-                intent.putExtra("Lesson", mDataset2[position]);
-                intent.putExtra("LessonNo",mDataset[position]);
+                /**intent.putExtra("Lesson", mDataset2[position]);
+                intent.putExtra("LessonNo",mDataset[position]);**/
                 intent.putExtra("LessonContent",mDataset3[position]);
                 context.startActivity(intent);
             }

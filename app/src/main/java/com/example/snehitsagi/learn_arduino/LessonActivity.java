@@ -1,5 +1,6 @@
 package com.example.snehitsagi.learn_arduino;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -35,6 +36,8 @@ public class LessonActivity extends AppCompatActivity {
         textViewLesson2.setText(getIntent().getStringExtra("LessonNo"));
 
         textViewLesson3 = (TextView) findViewById(R.id.textViewLesson3);
+        Typeface Alice = Typeface.createFromAsset(getAssets(),"fonts/Alice-Regular.ttf");
+        textViewLesson3.setTypeface(Alice);
         textViewLesson3.setText(getIntent().getStringExtra("LessonContent"));
 
 

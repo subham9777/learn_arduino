@@ -17,36 +17,40 @@
 
         </android.support.v7.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/textViewLesson1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:text="DataSet2"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
+            <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="248dp"
         android:id="@+id/textViewLesson2"
-        android:gravity="center"
-        android:textSize="18sp"
         android:text="DataSet1"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        />
 
-    <TextView
+            <TextView
+                android:id="@+id/textViewLesson1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="DataSet2"/>
+
+            <TextView
         android:text="DataSet3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_marginLeft="22dp"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="45dp"
+        android:textSize="@dimen/fontSize"
         android:id="@+id/textViewLesson3" />
+        </LinearLayout>
 
+    </ScrollView>
 
 </RelativeLayout>
