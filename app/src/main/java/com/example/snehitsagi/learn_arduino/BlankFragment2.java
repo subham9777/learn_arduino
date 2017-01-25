@@ -33,9 +33,9 @@ public class BlankFragment2 extends Fragment {
         /**
          * Changed by anurag, added another parameter
          */
-        MyAdapter adapter2 = new MyAdapter(new String[]{"01", "02", "03", "04", "05" , "06" , "07"},
-                new String[]{"Test1","Test2","Test3","Test4","Test5","Test6","Test7"},
-                new String[]{"01", "02", "03", "04", "05" , "06" , "07"},
+        MyAdapter adapter2 = new MyAdapter(new String[]{"01", "02", "03", "04", "05" , "06"},
+                new String[]{"Begginers Test","Commands Test","Rookie Test","Advanced Test","Scenarios Test","Pro Test"},
+                new String[]{"01", "02", "03", "04", "05" , "06"},
                 rootView.getContext());
         rv2.setAdapter(adapter2);
 
